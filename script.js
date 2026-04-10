@@ -2,6 +2,15 @@
 let currentFilter = 'All';
 let searchQuery = '';
 
+// Check if admin has updated data in localStorage
+function getWebsiteData() {
+  const stored = localStorage.getItem('websiteData');
+  if (stored) {
+    return JSON.parse(stored);
+  }
+  return websiteData; // fallback to original data.js
+}
+
 // Animated counter
 function animateCounter(element, target) {
   let current = 0;
@@ -52,14 +61,15 @@ function renderIPCards(filter = 'All', search = '') {
   const container = document.getElementById('ipCardsContainer');
   if (!container) return;
 
-  let filtered = websiteData.ips;
-  
+  const data = getWebsiteData();
+  let filtered = data.ips;
+
   if (filter !== 'All') {
     filtered = filtered.filter(ip => ip.category === filter);
   }
-  
+
   if (search) {
-    filtered = filtered.filter(ip => 
+    filtered = filtered.filter(ip =>
       ip.title.toLowerCase().includes(search.toLowerCase()) ||
       ip.description.toLowerCase().includes(search.toLowerCase())
     );
@@ -108,7 +118,7 @@ function renderIPCards(filter = 'All', search = '') {
       <button class="btn btn-primary">View Details</button>
     </div>
   `).join('');
-  
+
   setupScrollAnimations();
 }
 
@@ -117,14 +127,15 @@ function renderBlogCards(filter = 'All', search = '') {
   const container = document.getElementById('blogCardsContainer');
   if (!container) return;
 
-  let filtered = websiteData.blogs;
-  
+  const data = getWebsiteData();
+  let filtered = data.blogs;
+
   if (filter !== 'All') {
     filtered = filtered.filter(blog => blog.category === filter);
   }
-  
+
   if (search) {
-    filtered = filtered.filter(blog => 
+    filtered = filtered.filter(blog =>
       blog.title.toLowerCase().includes(search.toLowerCase()) ||
       blog.excerpt.toLowerCase().includes(search.toLowerCase())
     );
@@ -152,7 +163,7 @@ function renderBlogCards(filter = 'All', search = '') {
       </div>
     </div>
   `).join('');
-  
+
   setupScrollAnimations();
 }
 
@@ -161,14 +172,15 @@ function renderCareerCards(filter = 'All', search = '') {
   const container = document.getElementById('careerCardsContainer');
   if (!container) return;
 
-  let filtered = websiteData.careers;
-  
+  const data = getWebsiteData();
+  let filtered = data.careers;
+
   if (filter !== 'All') {
     filtered = filtered.filter(career => career.type === filter);
   }
-  
+
   if (search) {
-    filtered = filtered.filter(career => 
+    filtered = filtered.filter(career =>
       career.title.toLowerCase().includes(search.toLowerCase()) ||
       career.description.toLowerCase().includes(search.toLowerCase())
     );
@@ -202,7 +214,7 @@ function renderCareerCards(filter = 'All', search = '') {
       <button class="btn btn-primary">Apply Now</button>
     </div>
   `).join('');
-  
+
   setupScrollAnimations();
 }
 
@@ -212,18 +224,18 @@ function handleContactSubmit(e) {
   const form = e.target;
   const submitBtn = form.querySelector('button[type="submit"]');
   const originalText = submitBtn.textContent;
-  
+
   submitBtn.textContent = 'Sending...';
   submitBtn.disabled = true;
-  
+
   setTimeout(() => {
     submitBtn.textContent = originalText;
     submitBtn.disabled = false;
-    
+
     const successMsg = document.getElementById('successMessage');
     successMsg.style.display = 'block';
     form.reset();
-    
+
     setTimeout(() => {
       successMsg.style.display = 'none';
     }, 5000);
@@ -234,7 +246,7 @@ function handleContactSubmit(e) {
 function switchTab(tabName) {
   document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
   document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
-  
+
   document.querySelector(`[data-tab="${tabName}"]`).classList.add('active');
   document.getElementById(`${tabName}-content`).classList.add('active');
 }
@@ -242,10 +254,10 @@ function switchTab(tabName) {
 // Initialize on page load
 document.addEventListener('DOMContentLoaded', () => {
   setupScrollAnimations();
-  
+
   // Initialize page-specific content
   const page = document.body.getAttribute('data-page');
-  
+
   if (page === 'investor') {
     renderIPCards();
   } else if (page === 'insights') {
@@ -253,7 +265,7 @@ document.addEventListener('DOMContentLoaded', () => {
   } else if (page === 'careers') {
     renderCareerCards();
   }
-  
+
   // Animate counters on home page
   if (page === 'home') {
     const observer = new IntersectionObserver((entries) => {
@@ -265,7 +277,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
     });
-    
+
     document.querySelectorAll('.stat-number').forEach(el => observer.observe(el));
   }
 });
