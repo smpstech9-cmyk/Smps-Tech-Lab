@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Admin Panel</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>SMPS Tech Lab</h2>
+                <p>Admin Panel</p>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="dashboard.html" class="active">📊 Dashboard</a></li>
+                <li><a href="manage-ip.html">💡 Manage IPs</a></li>
+                <li><a href="manage-blogs.html">📝 Manage Blogs</a></li>
+                <li><a href="manage-careers.html">💼 Manage Careers</a></li>
+                <li><a href="#" onclick="logout()" style="color: #EF4444;">🚪 Logout</a></li>
+            </ul>
+        </aside>
+        
+        <main class="main-content">
+            <div class="top-bar">
+                <h1>Dashboard</h1>
+                <button onclick="exportData()" class="btn btn-success">📥 Export Data</button>
+            </div>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>Total IPs</h3>
+                    <div class="stat-value" id="totalIPs">0</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Total Blogs</h3>
+                    <div class="stat-value" id="totalBlogs">0</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Total Careers</h3>
+                    <div class="stat-value" id="totalCareers">0</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Partners</h3>
+                    <div class="stat-value" id="totalPartners">0</div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <h2>Quick Actions</h2>
+                </div>
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <a href="manage-ip.html" class="btn btn-primary">Add New IP</a>
+                    <a href="manage-blogs.html" class="btn btn-primary">Add New Blog</a>
+                    <a href="manage-careers.html" class="btn btn-primary">Add New Career</a>
+                    <button onclick="exportData()" class="btn btn-success">Export All Data</button>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h2>Instructions</h2>
+                <ul style="line-height: 2; color: #64748B;">
+                    <li>📝 Use the navigation menu to manage IPs, Blogs, and Careers</li>
+                    <li>💾 All changes are saved in browser localStorage</li>
+                    <li>📥 Export data to download updated data.js file</li>
+                    <li>🔄 Replace the data.js in your website folder to apply changes</li>
+                    <li>🔒 Default credentials: admin / admin123</li>
+                </ul>
+            </div>
+        </main>
+    </div>
+    
+    <script src="../data.js"></script>
+    <script src="admin.js"></script>
+    <script>loadDashboardStats();</script>
+</body>
+</html>

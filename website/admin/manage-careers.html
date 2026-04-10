@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Careers - Admin Panel</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>SMPS Tech Lab</h2>
+                <p>Admin Panel</p>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="dashboard.html">📊 Dashboard</a></li>
+                <li><a href="manage-ip.html">💡 Manage IPs</a></li>
+                <li><a href="manage-blogs.html">📝 Manage Blogs</a></li>
+                <li><a href="manage-careers.html" class="active">💼 Manage Careers</a></li>
+                <li><a href="#" onclick="logout()" style="color: #EF4444;">🚪 Logout</a></li>
+            </ul>
+        </aside>
+        
+        <main class="main-content">
+            <div class="top-bar">
+                <h1>Manage Careers</h1>
+                <button onclick="showCareerForm()" class="btn btn-primary">+ Add New Career</button>
+            </div>
+            
+            <div class="card">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Title</th>
+                            <th>Type</th>
+                            <th>Department</th>
+                            <th>Location</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="careerTableBody"></tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+    
+    <!-- Career Modal -->
+    <div id="careerModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Add/Edit Career</h2>
+                <span class="close" onclick="closeCareerModal()">&times;</span>
+            </div>
+            <form id="careerForm" onsubmit="saveCareer(event)">
+                <input type="hidden" id="careerId" name="careerId">
+                <div class="form-group">
+                    <label for="careerTitle">Title *</label>
+                    <input type="text" id="careerTitle" name="title" required>
+                </div>
+                <div class="form-group">
+                    <label for="careerType">Type *</label>
+                    <select id="careerType" name="type" required>
+                        <option value="Full-time">Full-time</option>
+                        <option value="Internship">Internship</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="careerDepartment">Department *</label>
+                    <input type="text" id="careerDepartment" name="department" required>
+                </div>
+                <div class="form-group">
+                    <label for="careerLocation">Location *</label>
+                    <input type="text" id="careerLocation" name="location" required>
+                </div>
+                <div class="form-group">
+                    <label for="careerExperience">Experience *</label>
+                    <input type="text" id="careerExperience" name="experience" required placeholder="2-5 years">
+                </div>
+                <div class="form-group">
+                    <label for="careerDescription">Description *</label>
+                    <textarea id="careerDescription" name="description" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="careerSkills">Skills (comma separated) *</label>
+                    <input type="text" id="careerSkills" name="skills" required placeholder="Python, TensorFlow, PyTorch">
+                </div>
+                <div style="display: flex; gap: 1rem;">
+                    <button type="submit" class="btn btn-primary">Save Career</button>
+                    <button type="button" onclick="closeCareerModal()" class="btn btn-secondary">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script src="../data.js"></script>
+    <script src="admin.js"></script>
+    <script>loadCareers();</script>
+</body>
+</html>

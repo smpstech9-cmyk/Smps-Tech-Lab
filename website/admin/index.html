@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login - SMPS Tech Lab</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <h1>Admin Panel</h1>
+            <p>SMPS Tech Lab Management System</p>
+            <form onsubmit="login(event)">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" required autocomplete="username">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required autocomplete="current-password">
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Login</button>
+                <p class="text-center mt-2" style="font-size: 0.875rem; color: #64748B;">
+                    Demo: admin / admin123
+                </p>
+            </form>
+        </div>
+    </div>
+    
+    <script src="../data.js"></script>
+    <script src="admin.js"></script>
+</body>
+</html>

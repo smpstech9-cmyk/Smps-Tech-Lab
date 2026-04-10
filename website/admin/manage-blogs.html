@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Blogs - Admin Panel</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>SMPS Tech Lab</h2>
+                <p>Admin Panel</p>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="dashboard.html">📊 Dashboard</a></li>
+                <li><a href="manage-ip.html">💡 Manage IPs</a></li>
+                <li><a href="manage-blogs.html" class="active">📝 Manage Blogs</a></li>
+                <li><a href="manage-careers.html">💼 Manage Careers</a></li>
+                <li><a href="#" onclick="logout()" style="color: #EF4444;">🚪 Logout</a></li>
+            </ul>
+        </aside>
+        
+        <main class="main-content">
+            <div class="top-bar">
+                <h1>Manage Blogs</h1>
+                <button onclick="showBlogForm()" class="btn btn-primary">+ Add New Blog</button>
+            </div>
+            
+            <div class="card">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Title</th>
+                            <th>Category</th>
+                            <th>Author</th>
+                            <th>Date</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="blogTableBody"></tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+    
+    <!-- Blog Modal -->
+    <div id="blogModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Add/Edit Blog</h2>
+                <span class="close" onclick="closeBlogModal()">&times;</span>
+            </div>
+            <form id="blogForm" onsubmit="saveBlog(event)">
+                <input type="hidden" id="blogId" name="blogId">
+                <div class="form-group">
+                    <label for="blogTitle">Title *</label>
+                    <input type="text" id="blogTitle" name="title" required>
+                </div>
+                <div class="form-group">
+                    <label for="blogExcerpt">Excerpt *</label>
+                    <textarea id="blogExcerpt" name="excerpt" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="blogCategory">Category *</label>
+                    <input type="text" id="blogCategory" name="category" required placeholder="Technology">
+                </div>
+                <div class="form-group">
+                    <label for="blogAuthor">Author *</label>
+                    <input type="text" id="blogAuthor" name="author" required>
+                </div>
+                <div class="form-group">
+                    <label for="blogDate">Date *</label>
+                    <input type="date" id="blogDate" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="blogReadTime">Read Time *</label>
+                    <input type="text" id="blogReadTime" name="readTime" required placeholder="8 min read">
+                </div>
+                <div style="display: flex; gap: 1rem;">
+                    <button type="submit" class="btn btn-primary">Save Blog</button>
+                    <button type="button" onclick="closeBlogModal()" class="btn btn-secondary">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script src="../data.js"></script>
+    <script src="admin.js"></script>
+    <script>loadBlogs();</script>
+</body>
+</html>

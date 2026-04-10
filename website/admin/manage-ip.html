@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage IPs - Admin Panel</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>SMPS Tech Lab</h2>
+                <p>Admin Panel</p>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="dashboard.html">📊 Dashboard</a></li>
+                <li><a href="manage-ip.html" class="active">💡 Manage IPs</a></li>
+                <li><a href="manage-blogs.html">📝 Manage Blogs</a></li>
+                <li><a href="manage-careers.html">💼 Manage Careers</a></li>
+                <li><a href="#" onclick="logout()" style="color: #EF4444;">🚪 Logout</a></li>
+            </ul>
+        </aside>
+        
+        <main class="main-content">
+            <div class="top-bar">
+                <h1>Manage Intellectual Properties</h1>
+                <button onclick="showIPForm()" class="btn btn-primary">+ Add New IP</button>
+            </div>
+            
+            <div class="card">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Title</th>
+                            <th>Category</th>
+                            <th>Value</th>
+                            <th>Stage</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="ipTableBody"></tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+    
+    <!-- IP Modal -->
+    <div id="ipModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Add/Edit IP</h2>
+                <span class="close" onclick="closeIPModal()">&times;</span>
+            </div>
+            <form id="ipForm" onsubmit="saveIP(event)">
+                <input type="hidden" id="ipId" name="ipId">
+                <div class="form-group">
+                    <label for="ipTitle">Title *</label>
+                    <input type="text" id="ipTitle" name="title" required>
+                </div>
+                <div class="form-group">
+                    <label for="ipCategory">Category *</label>
+                    <input type="text" id="ipCategory" name="category" required>
+                </div>
+                <div class="form-group">
+                    <label for="ipDescription">Description *</label>
+                    <textarea id="ipDescription" name="description" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="ipValue">IP Value *</label>
+                    <input type="text" id="ipValue" name="value" required placeholder="₹15 Cr">
+                </div>
+                <div class="form-group">
+                    <label for="ipMarketSize">Market Size *</label>
+                    <input type="text" id="ipMarketSize" name="marketSize" required placeholder="₹2,500 Cr by 2026">
+                </div>
+                <div class="form-group">
+                    <label for="ipRevenue">Revenue Potential *</label>
+                    <input type="text" id="ipRevenue" name="revenue" required placeholder="₹50 Cr annually">
+                </div>
+                <div class="form-group">
+                    <label for="ipClients">Key Clients (comma separated) *</label>
+                    <input type="text" id="ipClients" name="clients" required placeholder="BSNL, Airtel, Jio">
+                </div>
+                <div class="form-group">
+                    <label for="ipCredibility">Credibility (comma separated) *</label>
+                    <input type="text" id="ipCredibility" name="credibility" required placeholder="VTU Certified, DoT Approved">
+                </div>
+                <div class="form-group">
+                    <label for="ipStage">Stage *</label>
+                    <select id="ipStage" name="stage" required>
+                        <option value="Research Phase">Research Phase</option>
+                        <option value="Pilot Phase">Pilot Phase</option>
+                        <option value="Production Ready">Production Ready</option>
+                        <option value="Commercial">Commercial</option>
+                        <option value="Deployment">Deployment</option>
+                        <option value="Scaling">Scaling</option>
+                    </select>
+                </div>
+                <div style="display: flex; gap: 1rem;">
+                    <button type="submit" class="btn btn-primary">Save IP</button>
+                    <button type="button" onclick="closeIPModal()" class="btn btn-secondary">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script src="../data.js"></script>
+    <script src="admin.js"></script>
+    <script>loadIPs();</script>
+</body>
+</html>
