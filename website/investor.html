@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP Portfolio - SMPS Tech Lab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="investor">
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">ST</div>
+                <div class="logo-text">
+                    <h1>SMPS Tech Lab</h1>
+                    <p>Innovation Ecosystem Platform</p>
+                </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="investor.html" class="active">Investor</a></li>
+                <li><a href="collaborate.html">Collaborate</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="ecosystem.html">Ecosystem</a></li>
+                <li><a href="insights.html">Insights</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" onclick="toggleMobileMenu()">☰</button>
+        </div>
+        <div id="mobileMenu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="investor.html" class="active">Investor</a>
+            <a href="collaborate.html">Collaborate</a>
+            <a href="careers.html">Careers</a>
+            <a href="ecosystem.html">Ecosystem</a>
+            <a href="insights.html">Insights</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <section class="section section-muted" style="padding-top: 8rem;">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">Intellectual Property Portfolio</p>
+                <h1 class="section-title">Innovation Ready for Investment</h1>
+                <p class="section-description">Explore our 17+ high-value intellectual properties across critical technology sectors with proven market potential and government backing.</p>
+            </div>
+            <div class="filters">
+                <div class="search-box">
+                    <input type="text" placeholder="Search by title or description..." onkeyup="searchQuery = this.value; renderIPCards(currentFilter, searchQuery);">
+                </div>
+                <div class="filter-select">
+                    <select onchange="currentFilter = this.value; renderIPCards(currentFilter, searchQuery);">
+                        <option value="All">All Categories</option>
+                        <option value="Telecommunications">Telecommunications</option>
+                        <option value="Agriculture Tech">Agriculture Tech</option>
+                        <option value="Cybersecurity">Cybersecurity</option>
+                        <option value="HealthTech">HealthTech</option>
+                        <option value="Urban Tech">Urban Tech</option>
+                        <option value="Education">Education</option>
+                        <option value="Clean Energy">Clean Energy</option>
+                        <option value="Financial Services">Financial Services</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div id="ipCardsContainer" class="grid grid-3"></div>
+        </div>
+    </section>
+
+    <section class="section section-muted">
+        <div class="container" style="text-align: center;">
+            <h2 class="section-title">Interested in Investing?</h2>
+            <p class="section-description">Schedule a meeting with our investment team to discuss opportunities, valuations, and partnership models.</p>
+            <a href="contact.html" class="btn btn-primary" style="margin-top: 2rem;">Schedule a Meeting</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-section">
+                <div class="logo" style="color: white; margin-bottom: 1rem;">
+                    <div class="logo-icon">ST</div>
+                    <div class="logo-text">
+                        <h1>SMPS Tech Lab</h1>
+                        <p style="color: rgba(255,255,255,0.7);">Innovation Ecosystem</p>
+                    </div>
+                </div>
+                <p>A National Innovation Ecosystem Platform driving India's technology leadership.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="investor.html">IP Portfolio</a></li>
+                    <li><a href="collaborate.html">Collaboration</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="insights.html">Insights</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>📍 Bangalore, India</p>
+                <p>✉️ contact@smpstechlab.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 SMPS Tech Lab. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

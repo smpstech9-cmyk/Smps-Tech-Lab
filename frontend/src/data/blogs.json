@@ -1,0 +1,92 @@
+[
+  {
+    "id": "blog-001",
+    "title": "The Future of 6G Technology in India",
+    "excerpt": "Exploring how 6G will revolutionize connectivity and enable new use cases in healthcare, education, and smart cities.",
+    "category": "Technology",
+    "author": "Dr. Rajesh Kumar",
+    "date": "2025-01-15",
+    "readTime": "8 min read",
+    "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800"
+  },
+  {
+    "id": "blog-002",
+    "title": "AI in Agriculture: Transforming Indian Farming",
+    "excerpt": "How artificial intelligence and IoT are helping farmers increase crop yields while reducing resource consumption.",
+    "category": "Agriculture",
+    "author": "Priya Sharma",
+    "date": "2025-01-10",
+    "readTime": "6 min read",
+    "image": "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=800"
+  },
+  {
+    "id": "blog-003",
+    "title": "Quantum Computing: India's Next Frontier",
+    "excerpt": "An overview of India's quantum computing initiatives and their potential impact on cryptography and research.",
+    "category": "Research",
+    "author": "Prof. Anand Mehta",
+    "date": "2025-01-05",
+    "readTime": "10 min read",
+    "image": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=800"
+  },
+  {
+    "id": "blog-004",
+    "title": "Building Smart Cities: Lessons from Bangalore",
+    "excerpt": "Case study on implementing smart traffic management and how it reduced congestion by 35%.",
+    "category": "Smart Cities",
+    "author": "Vikram Singh",
+    "date": "2024-12-28",
+    "readTime": "7 min read",
+    "image": "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=800"
+  },
+  {
+    "id": "blog-005",
+    "title": "EdTech Revolution: Reaching 4 Lakh Students",
+    "excerpt": "Our journey of democratizing quality education through adaptive learning platforms across India.",
+    "category": "Education",
+    "author": "Neha Patel",
+    "date": "2024-12-20",
+    "readTime": "5 min read",
+    "image": "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=800"
+  },
+  {
+    "id": "blog-006",
+    "title": "Renewable Energy: Optimizing Solar Grids with AI",
+    "excerpt": "How machine learning algorithms are making renewable energy more efficient and cost-effective.",
+    "category": "Clean Energy",
+    "author": "Dr. Meera Reddy",
+    "date": "2024-12-15",
+    "readTime": "9 min read",
+    "image": "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800"
+  },
+  {
+    "id": "blog-007",
+    "title": "Cybersecurity in the Quantum Age",
+    "excerpt": "Understanding quantum threats and how quantum cryptography can protect critical infrastructure.",
+    "category": "Security",
+    "author": "Arjun Khanna",
+    "date": "2024-12-10",
+    "readTime": "11 min read",
+    "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800"
+  },
+  {
+    "id": "blog-008",
+    "title": "Drone Technology for Disaster Management",
+    "excerpt": "How autonomous drones are helping in rapid response and assessment during natural disasters.",
+    "category": "Technology",
+    "author": "Captain Rohit Verma",
+    "date": "2024-12-05",
+    "readTime": "6 min read",
+    "image": "https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=800"
+  },
+  {
+    "id": "blog-009",
+    "title": "Healthcare AI: Early Disease Detection at Scale",
+    "excerpt": "Our AI diagnostics platform is making quality healthcare accessible to underserved communities.",
+    "category": "Healthcare",
+    "author": "Dr. Kavita Iyer",
+    "date": "2024-11-28",
+    "readTime": "8 min read",
+    "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800"
+  }
+]

@@ -1,0 +1,79 @@
+{
+  "metrics": {
+    "ips": 17,
+    "partnerships": 228,
+    "studentsEngaged": 400000,
+    "fundingRaised": "₹150 Cr",
+    "patentsFiled": 34,
+    "startupsIncubated": 12
+  },
+  "advisors": [
+    {
+      "id": 1,
+      "name": "Dr. Radhakrishnan Nair",
+      "designation": "Former ISRO Scientist",
+      "expertise": "Space Technology & Satellite Systems",
+      "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400"
+    },
+    {
+      "id": 2,
+      "name": "Prof. Anjali Verma",
+      "designation": "IIT Madras Faculty",
+      "expertise": "Artificial Intelligence & Machine Learning",
+      "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400"
+    },
+    {
+      "id": 3,
+      "name": "Mr. Vikram Malhotra",
+      "designation": "Ex-CEO, Tech Mahindra",
+      "expertise": "Business Strategy & Digital Transformation",
+      "image": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400"
+    },
+    {
+      "id": 4,
+      "name": "Dr. Kavita Sharma",
+      "designation": "DRDO Chief Scientist",
+      "expertise": "Quantum Computing & Cryptography",
+      "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400"
+    }
+  ],
+  "awards": [
+    {
+      "id": 1,
+      "title": "National Innovation Award 2024",
+      "issuer": "Government of India",
+      "year": 2024
+    },
+    {
+      "id": 2,
+      "title": "Best Deep Tech Startup",
+      "issuer": "Nasscom",
+      "year": 2024
+    },
+    {
+      "id": 3,
+      "title": "Excellence in R&D",
+      "issuer": "AICTE",
+      "year": 2023
+    },
+    {
+      "id": 4,
+      "title": "Smart City Innovation Award",
+      "issuer": "Smart Cities Mission",
+      "year": 2023
+    },
+    {
+      "id": 5,
+      "title": "Technology Pioneer",
+      "issuer": "World Economic Forum",
+      "year": 2023
+    }
+  ],
+  "growthData": [
+    { "year": 2020, "ips": 3, "partnerships": 45 },
+    { "year": 2021, "ips": 6, "partnerships": 89 },
+    { "year": 2022, "ips": 10, "partnerships": 142 },
+    { "year": 2023, "ips": 14, "partnerships": 185 },
+    { "year": 2024, "ips": 17, "partnerships": 228 }
+  ]
+}

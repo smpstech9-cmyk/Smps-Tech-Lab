@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insights - SMPS Tech Lab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="insights">
+    <nav id="navbar"><div class="nav-container"><a href="index.html" class="logo"><div class="logo-icon">ST</div><div class="logo-text"><h1>SMPS Tech Lab</h1><p>Innovation Ecosystem</p></div></a><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="investor.html">Investor</a></li><li><a href="collaborate.html">Collaborate</a></li><li><a href="careers.html">Careers</a></li><li><a href="ecosystem.html">Ecosystem</a></li><li><a href="insights.html" class="active">Insights</a></li><li><a href="contact.html">Contact</a></li></ul><button class="menu-toggle" onclick="toggleMobileMenu()">☰</button></div><div id="mobileMenu"><a href="index.html">Home</a><a href="about.html">About</a><a href="investor.html">Investor</a><a href="collaborate.html">Collaborate</a><a href="careers.html">Careers</a><a href="ecosystem.html">Ecosystem</a><a href="insights.html" class="active">Insights</a><a href="contact.html">Contact</a></div></nav>
+    
+    <section class="section section-muted" style="padding-top: 8rem;"><div class="container"><div class="section-header"><p class="section-label">Insights & Knowledge Hub</p><h1 class="section-title">Exploring Technology & Innovation</h1><p class="section-description">Insights, case studies, and thought leadership from India's innovation ecosystem.</p></div><div class="filters"><div class="search-box"><input type="text" placeholder="Search articles..." onkeyup="searchQuery = this.value; renderBlogCards(currentFilter, searchQuery);"></div><div class="category-buttons"><button class="active" onclick="currentFilter = 'All'; renderBlogCards(currentFilter, searchQuery); this.parentElement.querySelectorAll('button').forEach(b => b.classList.remove('active')); this.classList.add('active');">All</button><button onclick="currentFilter = 'Technology'; renderBlogCards(currentFilter, searchQuery); this.parentElement.querySelectorAll('button').forEach(b => b.classList.remove('active')); this.classList.add('active');">Technology</button><button onclick="currentFilter = 'Research'; renderBlogCards(currentFilter, searchQuery); this.parentElement.querySelectorAll('button').forEach(b => b.classList.remove('active')); this.classList.add('active');">Research</button><button onclick="currentFilter = 'Healthcare'; renderBlogCards(currentFilter, searchQuery); this.parentElement.querySelectorAll('button').forEach(b => b.classList.remove('active')); this.classList.add('active');">Healthcare</button></div></div></div></section>
+    
+    <section class="section"><div class="container"><div id="blogCardsContainer" class="grid grid-3"></div></div></section>
+    
+    <section class="section section-muted"><div class="container" style="text-align: center;"><h2 class="section-title">Subscribe to Our Newsletter</h2><p class="section-description">Get the latest insights delivered to your inbox.</p><div style="display: flex; gap: 1rem; max-width: 600px; margin: 2rem auto 0;"><input type="email" placeholder="Enter your email" style="flex: 1; padding: 1rem; border: 1px solid var(--border); border-radius: 8px;"><button class="btn btn-primary">Subscribe</button></div></div></section>
+    
+    <footer><div class="footer-grid"><div class="footer-section"><div class="logo" style="color: white;"><div class="logo-icon">ST</div><div class="logo-text"><h1>SMPS Tech Lab</h1></div></div></div><div class="footer-section"><h4>Links</h4><ul><li><a href="about.html">About</a></li><li><a href="investor.html">Portfolio</a></li></ul></div><div class="footer-section"><h4>Resources</h4><ul><li><a href="careers.html">Careers</a></li><li><a href="contact.html">Contact</a></li></ul></div><div class="footer-section"><h4>Contact</h4><p>📍 Bangalore</p><p>✉️ contact@smpstechlab.com</p></div></div><div class="footer-bottom"><p>© 2025 SMPS Tech Lab</p></div></footer>
+    
+    <script src="data.js"></script><script src="script.js"></script>
+</body>
+</html>

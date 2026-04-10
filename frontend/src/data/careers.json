@@ -1,0 +1,134 @@
+[
+  {
+    "id": "career-001",
+    "title": "Senior Machine Learning Engineer",
+    "type": "Full-time",
+    "department": "AI Research",
+    "location": "Bangalore, India",
+    "experience": "4-7 years",
+    "description": "Join our AI research team to develop cutting-edge machine learning models for 5G network optimization and healthcare diagnostics.",
+    "skills": ["Python", "TensorFlow", "PyTorch", "Deep Learning", "MLOps"],
+    "postedDate": "2025-01-10"
+  },
+  {
+    "id": "career-002",
+    "title": "IoT Solutions Architect",
+    "type": "Full-time",
+    "department": "IoT & Embedded Systems",
+    "location": "Pune, India",
+    "experience": "5-8 years",
+    "description": "Design and implement scalable IoT architectures for smart agriculture and industrial applications.",
+    "skills": ["IoT Protocols", "AWS IoT", "Edge Computing", "Embedded Systems", "MQTT"],
+    "postedDate": "2025-01-08"
+  },
+  {
+    "id": "career-003",
+    "title": "Research Intern - Quantum Computing",
+    "type": "Internship",
+    "department": "Research & Development",
+    "location": "Bangalore, India / Remote",
+    "experience": "0-1 years",
+    "description": "Work with leading researchers on quantum cryptography projects and contribute to cutting-edge research papers.",
+    "skills": ["Quantum Mechanics", "Python", "Qiskit", "Linear Algebra", "Research"],
+    "postedDate": "2025-01-05"
+  },
+  {
+    "id": "career-004",
+    "title": "Full Stack Developer",
+    "type": "Full-time",
+    "department": "Product Engineering",
+    "location": "Hyderabad, India",
+    "experience": "2-5 years",
+    "description": "Build and maintain web applications for our EdTech and smart city platforms.",
+    "skills": ["React", "Node.js", "MongoDB", "AWS", "REST APIs"],
+    "postedDate": "2025-01-03"
+  },
+  {
+    "id": "career-005",
+    "title": "Business Development Manager",
+    "type": "Full-time",
+    "department": "Business Development",
+    "location": "Delhi NCR, India",
+    "experience": "5-10 years",
+    "description": "Drive partnerships with government agencies, academic institutions, and enterprise clients.",
+    "skills": ["B2B Sales", "Partnership Management", "Strategic Planning", "Negotiation", "Tech Industry"],
+    "postedDate": "2024-12-28"
+  },
+  {
+    "id": "career-006",
+    "title": "Computer Vision Engineer",
+    "type": "Full-time",
+    "department": "AI Research",
+    "location": "Bangalore, India",
+    "experience": "3-6 years",
+    "description": "Develop computer vision solutions for healthcare diagnostics, manufacturing quality control, and drone surveillance.",
+    "skills": ["OpenCV", "YOLO", "Image Processing", "Deep Learning", "C++/Python"],
+    "postedDate": "2024-12-25"
+  },
+  {
+    "id": "career-007",
+    "title": "Data Science Intern",
+    "type": "Internship",
+    "department": "Data Analytics",
+    "location": "Remote",
+    "experience": "0-1 years",
+    "description": "Analyze large datasets and build predictive models for various IP projects. Great opportunity for recent graduates.",
+    "skills": ["Python", "Pandas", "SQL", "Statistics", "Data Visualization"],
+    "postedDate": "2024-12-20"
+  },
+  {
+    "id": "career-008",
+    "title": "DevOps Engineer",
+    "type": "Full-time",
+    "department": "Infrastructure",
+    "location": "Bangalore, India / Remote",
+    "experience": "3-5 years",
+    "description": "Manage cloud infrastructure, implement CI/CD pipelines, and ensure high availability of production systems.",
+    "skills": ["Kubernetes", "Docker", "AWS/Azure", "Jenkins", "Terraform"],
+    "postedDate": "2024-12-18"
+  },
+  {
+    "id": "career-009",
+    "title": "Product Manager - EdTech",
+    "type": "Full-time",
+    "department": "Product Management",
+    "location": "Mumbai, India",
+    "experience": "4-7 years",
+    "description": "Lead product strategy and roadmap for our EdTech platform serving 4L+ students.",
+    "skills": ["Product Strategy", "User Research", "Agile", "EdTech Domain", "Stakeholder Management"],
+    "postedDate": "2024-12-15"
+  },
+  {
+    "id": "career-010",
+    "title": "Blockchain Developer",
+    "type": "Full-time",
+    "department": "Blockchain Solutions",
+    "location": "Pune, India",
+    "experience": "2-5 years",
+    "description": "Develop and deploy smart contracts for supply chain traceability solutions.",
+    "skills": ["Solidity", "Ethereum", "Web3.js", "Smart Contracts", "Hyperledger"],
+    "postedDate": "2024-12-12"
+  },
+  {
+    "id": "career-011",
+    "title": "UI/UX Design Intern",
+    "type": "Internship",
+    "department": "Design",
+    "location": "Remote",
+    "experience": "0-1 years",
+    "description": "Create intuitive user interfaces for our suite of technology products across web and mobile platforms.",
+    "skills": ["Figma", "UI Design", "User Research", "Prototyping", "Adobe XD"],
+    "postedDate": "2024-12-10"
+  },
+  {
+    "id": "career-012",
+    "title": "Cybersecurity Specialist",
+    "type": "Full-time",
+    "department": "Security",
+    "location": "Bangalore, India",
+    "experience": "4-8 years",
+    "description": "Ensure security of critical systems and lead implementation of quantum-resistant cryptography solutions.",
+    "skills": ["Penetration Testing", "Cryptography", "Security Auditing", "ISO 27001", "Network Security"],
+    "postedDate": "2024-12-08"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Visvesvaraya Technological University",
+    "logo": "VTU",
+    "category": "Academic"
+  },
+  {
+    "id": 2,
+    "name": "Department of Telecommunications",
+    "logo": "DoT",
+    "category": "Government"
+  },
+  {
+    "id": 3,
+    "name": "Bharat 6G Alliance",
+    "logo": "B6GA",
+    "category": "Industry"
+  },
+  {
+    "id": 4,
+    "name": "IIT Madras",
+    "logo": "IITM",
+    "category": "Academic"
+  },
+  {
+    "id": 5,
+    "name": "DRDO",
+    "logo": "DRDO",
+    "category": "Government"
+  },
+  {
+    "id": 6,
+    "name": "ISRO",
+    "logo": "ISRO",
+    "category": "Government"
+  },
+  {
+    "id": 7,
+    "name": "IIT Bombay",
+    "logo": "IITB",
+    "category": "Academic"
+  },
+  {
+    "id": 8,
+    "name": "C-DAC",
+    "logo": "CDAC",
+    "category": "Research"
+  },
+  {
+    "id": 9,
+    "name": "Tata Group",
+    "logo": "TATA",
+    "category": "Industry"
+  },
+  {
+    "id": 10,
+    "name": "Reliance Industries",
+    "logo": "RIL",
+    "category": "Industry"
+  },
+  {
+    "id": 11,
+    "name": "NITI Aayog",
+    "logo": "NITI",
+    "category": "Government"
+  },
+  {
+    "id": 12,
+    "name": "IIM Bangalore",
+    "logo": "IIMB",
+    "category": "Academic"
+  }
+]

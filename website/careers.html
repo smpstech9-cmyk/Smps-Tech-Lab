@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers - SMPS Tech Lab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="careers">
+    <nav id="navbar"><div class="nav-container"><a href="index.html" class="logo"><div class="logo-icon">ST</div><div class="logo-text"><h1>SMPS Tech Lab</h1><p>Innovation Ecosystem</p></div></a><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="investor.html">Investor</a></li><li><a href="collaborate.html">Collaborate</a></li><li><a href="careers.html" class="active">Careers</a></li><li><a href="ecosystem.html">Ecosystem</a></li><li><a href="insights.html">Insights</a></li><li><a href="contact.html">Contact</a></li></ul><button class="menu-toggle" onclick="toggleMobileMenu()">☰</button></div><div id="mobileMenu"><a href="index.html">Home</a><a href="about.html">About</a><a href="investor.html">Investor</a><a href="collaborate.html">Collaborate</a><a href="careers.html" class="active">Careers</a><a href="ecosystem.html">Ecosystem</a><a href="insights.html">Insights</a><a href="contact.html">Contact</a></div></nav>
+    
+    <section class="section section-muted" style="padding-top: 8rem;"><div class="container"><div class="section-header"><p class="section-label">Join Our Team</p><h1 class="section-title">Build the Future of Technology</h1><p class="section-description">Join India's leading innovation ecosystem and work on cutting-edge projects that shape the nation's technological future.</p></div><div class="filters"><div class="search-box"><input type="text" placeholder="Search positions..." onkeyup="searchQuery = this.value; renderCareerCards(currentFilter, searchQuery);"></div><div class="filter-select"><select onchange="currentFilter = this.value; renderCareerCards(currentFilter, searchQuery);"><option value="All">All Types</option><option value="Full-time">Full-time</option><option value="Internship">Internship</option></select></div></div></div></section>
+    
+    <section class="section"><div class="container"><div id="careerCardsContainer" class="grid grid-3"></div></div></section>
+    
+    <section class="section section-muted"><div class="container"><div class="grid grid-2" style="gap: 4rem; align-items: center;"><div><h2 style="font-size: 2rem; margin-bottom: 1.5rem;">Why Join SMPS Tech Lab?</h2><ul style="list-style: none; padding: 0;"><li style="display: flex; gap: 1rem; margin-bottom: 1rem;"><span style="color: var(--primary);">✓</span><span>Work on nationally critical projects</span></li><li style="display: flex; gap: 1rem; margin-bottom: 1rem;"><span style="color: var(--primary);">✓</span><span>Collaborate with IITs, DRDO, ISRO</span></li><li style="display: flex; gap: 1rem; margin-bottom: 1rem;"><span style="color: var(--primary);">✓</span><span>Access to cutting-edge facilities</span></li><li style="display: flex; gap: 1rem; margin-bottom: 1rem;"><span style="color: var(--primary);">✓</span><span>Competitive compensation</span></li></ul></div><div class="card"><h3>Don't See the Right Role?</h3><p style="margin: 1rem 0;">Send us your resume and we'll reach out when a suitable position opens up.</p><button class="btn btn-primary" style="width: 100%;">Submit Your Resume</button></div></div></div></section>
+    
+    <footer><div class="footer-grid"><div class="footer-section"><div class="logo" style="color: white; margin-bottom: 1rem;"><div class="logo-icon">ST</div><div class="logo-text"><h1>SMPS Tech Lab</h1></div></div><p>National Innovation Ecosystem</p></div><div class="footer-section"><h4>Links</h4><ul><li><a href="about.html">About</a></li><li><a href="investor.html">Portfolio</a></li></ul></div><div class="footer-section"><h4>Resources</h4><ul><li><a href="insights.html">Insights</a></li><li><a href="contact.html">Contact</a></li></ul></div><div class="footer-section"><h4>Contact</h4><p>📍 Bangalore</p><p>✉️ contact@smpstechlab.com</p></div></div><div class="footer-bottom"><p>© 2025 SMPS Tech Lab. All rights reserved.</p></div></footer>
+    
+    <script src="data.js"></script><script src="script.js"></script>
+</body>
+</html>

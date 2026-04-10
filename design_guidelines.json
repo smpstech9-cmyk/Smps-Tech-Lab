@@ -1,0 +1,146 @@
+{
+  "theme": "Light",
+  "archetype": "Archetype 4 (Swiss & High-Contrast - Custom Corporate Variant)",
+  "colors": {
+    "primary": {
+      "DEFAULT": "#0A66C2",
+      "dark": "#1E3A8A",
+      "light": "#3B82F6",
+      "foreground": "#FFFFFF"
+    },
+    "secondary": {
+      "DEFAULT": "#FFFFFF",
+      "foreground": "#0F172A"
+    },
+    "accent": {
+      "DEFAULT": "#F3F4F6",
+      "foreground": "#0F172A",
+      "blue": "#EFF6FF"
+    },
+    "background": "#FAFAFA",
+    "foreground": "#0F172A",
+    "muted": "#F8FAFC",
+    "muted_foreground": "#64748B",
+    "border": "#E2E8F0"
+  },
+  "typography": {
+    "font_family": {
+      "heading": "'Outfit', sans-serif",
+      "body": "'IBM Plex Sans', sans-serif"
+    },
+    "sizes": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl tracking-tighter font-bold",
+      "h2": "text-3xl sm:text-4xl tracking-tight font-semibold",
+      "h3": "text-xl sm:text-2xl tracking-tight font-medium",
+      "h4": "text-lg sm:text-xl font-medium",
+      "body": "text-base leading-relaxed",
+      "small": "text-sm tracking-wide text-muted-foreground"
+    },
+    "rules": [
+      "Headings strictly avoid Inter, Roboto, Open Sans.",
+      "Never center align paragraphs; use left-align for high readability.",
+      "Overlines/labels must be Uppercase, text-xs, tracking-[0.2em] font-semibold text-primary."
+    ]
+  },
+  "layout_and_spacing": {
+    "general": [
+      "Use py-20 to py-32 for major section vertical padding.",
+      "px-4 sm:px-6 lg:px-8 for responsive horizontal container padding.",
+      "Always use optical alignment for icons and text."
+    ],
+    "grids": {
+      "marketing_tetris": "grid grid-cols-1 md:grid-cols-8 lg:grid-cols-12 gap-8",
+      "dashboard_control": "grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6"
+    }
+  },
+  "surfaces_and_components": {
+    "header": "Crystal Glassmorphism: sticky top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-white/40 shadow-sm",
+    "cards": "Flat solid background bg-white, 1px border border-slate-200, rounded-xl. Hover: -translate-y-1 shadow-[0_12px_32px_rgba(10,102,194,0.1)] transition-all duration-300",
+    "buttons": {
+      "primary": "bg-primary text-white rounded-lg px-6 py-3 font-medium hover:bg-primary-dark transition-colors shadow-lg shadow-primary/20",
+      "secondary": "bg-white text-primary border border-primary rounded-lg px-6 py-3 font-medium hover:bg-primary/5 transition-colors"
+    },
+    "banned_patterns": [
+      "Center-everything layouts",
+      "Gradient overload",
+      "Soft, muddy UI everywhere"
+    ],
+    "shadcn_overrides": [
+      "Tabs: use pill-shaped triggers, bg-accent-blue for active state, text-primary.",
+      "Cards: Go cardless or use sharp/subtle rounded-xl with strong borders. No default Vercel look."
+    ]
+  },
+  "animations": {
+    "scroll": "Use Lenis for smooth momentum scrolling.",
+    "hover": "Interactive elements must shift color and slightly lift (-translate-y-1) or scale (1.02).",
+    "entrance": "Staggered fade-up (y: 20, opacity: 0) for lists and grids using Framer Motion.",
+    "counters": "Use Framer Motion to animate number counters from 0 to target."
+  },
+  "media": {
+    "image_urls": {
+      "hero_background": {
+        "url": "https://static.prod-images.emergentagent.com/jobs/f763e513-f46d-4ac1-a94e-57305606a144/images/6bbf92cc67e047a492fce99542281dbbb9f5b0c7b5c652a5eb245f73e4c997ef.png",
+        "description": "High-end corporate innovation hub architectural render with blue accents. Best used in Hero."
+      },
+      "network_background": {
+        "url": "https://static.prod-images.emergentagent.com/jobs/f763e513-f46d-4ac1-a94e-57305606a144/images/1f331c9ba9f572c5cc2d1435c07e2f11596556dede400b1ac67a1c546c2568b0.png",
+        "description": "Abstract blue network connectivity for global scale sections or CTA backgrounds."
+      },
+      "modern_office": {
+        "url": "https://images.unsplash.com/photo-1768661770207-9aa46d5ed526?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBjb3Jwb3JhdGUlMjBvZmZpY2UlMjBidWlsZGluZyUyMGJsdWUlMjBza3l8ZW58MHx8fHwxNzc1ODE4ODQzfDA&ixlib=rb-4.1.0&q=85",
+        "description": "Modern corporate building, great for the 'About' or 'Collaborate' context."
+      },
+      "laboratory_team": {
+        "url": "https://images.unsplash.com/photo-1766297247924-6638d54e7c89?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTB8MHwxfHNlYXJjaHwzfHx0ZWNoJTIwbGFib3JhdG9yeSUyMGlubm92YXRpb24lMjB0ZWFtfGVufDB8fHx8MTc3NTgxODg0M3ww&ixlib=rb-4.1.0&q=85",
+        "description": "Scientists working on computers, suitable for 'Ecosystem' or 'Insights' sections."
+      },
+      "partner_logos": [
+        "https://images.unsplash.com/photo-1622465911368-72162f8da3e2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MDZ8MHwxfHNlYXJjaHwyfHxjb21wYW55JTIwYnJhbmQlMjBsb2dvJTIwaWNvbiUyMHRyYW5zcGFyZW50fGVufDB8fHx8MTc3NTgxODg2NXww&ixlib=rb-4.1.0&q=85",
+        "https://images.unsplash.com/photo-1773844914284-498c0e049b36?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MDZ8MHwxfHNlYXJjaHw0fHxjb21wYW55JTIwYnJhbmQlMjBsb2dvJTIwaWNvbiUyMHRyYW5zcGFyZW50fGVufDB8fHx8MTc3NTgxODg2NXww&ixlib=rb-4.1.0&q=85",
+        "https://images.unsplash.com/photo-1651950373182-dfb42e2dac56?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzF8MHwxfHNlYXJjaHwyfHx1bml2ZXJzaXR5JTIwY3Jlc3QlMjBsb2dvJTIwaXNvbGF0ZWR8ZW58MHx8fHwxNzc1ODE4ODY1fDA&ixlib=rb-4.1.0&q=85",
+        "https://images.unsplash.com/photo-1642707333429-7bd91186409a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzF8MHwxfHNlYXJjaHw0fHx1bml2ZXJzaXR5JTIwY3Jlc3QlMjBsb2dvJTIwaXNvbGF0ZWR8ZW58MHx8fHwxNzc1ODE4ODY1fDA&ixlib=rb-4.1.0&q=85"
+      ]
+    },
+    "icons": {
+      "library": "lucide-react",
+      "instruction": "Use lucide-react for UI icons. Where partner logos fail to load or look poor, augment the partner section using lucide icons (e.g. Building2, Landmark, Shield) to simulate partner companies."
+    }
+  },
+  "pages_structure": {
+    "Home": {
+      "layout": "Hero section with background overlay (bg-black/30). Left-aligned H1. Framer motion entry. Stats row showing 17+ IPs, 228+ Partnerships, 4L+ Students using animated counters.",
+      "components_needed": ["Hero", "StatsBar"]
+    },
+    "About": {
+      "layout": "Bento Grid (Tetris Mode) for Vision/Mission and Core Capabilities.",
+      "components_needed": ["BentoGrid"]
+    },
+    "Investor": {
+      "layout": "Grid layout (grid-cols-1 md:grid-cols-2 lg:grid-cols-3). Dynamic IP Cards displaying value, market size, revenue potential. Hover effects mandatory.",
+      "components_needed": ["Card", "Badge"]
+    },
+    "Collaborate": {
+      "layout": "Tabbed Interface. Left column tabs, right column content (Academia, Industry, Startups, Government).",
+      "components_needed": ["Tabs", "TabsList", "TabsTrigger", "TabsContent"]
+    },
+    "Ecosystem": {
+      "layout": "Control Room layout for Metrics dashboard (using Recharts). Marquee component below for partner logos carousel.",
+      "components_needed": ["LineChart/BarChart", "Marquee (react-fast-marquee)"]
+    },
+    "Insights_and_Careers": {
+      "layout": "Listings with filters, clean typography, minimalist borders.",
+      "components_needed": ["Card", "Filter Select"]
+    },
+    "Contact": {
+      "layout": "Two-column layout: Form on the left, Contact Info / Map on the right.",
+      "components_needed": ["Form", "Input", "Textarea", "Button"]
+    }
+  },
+  "instructions_to_main_agent": [
+    "Install and setup required packages: `npm install framer-motion react-fast-marquee recharts lucide-react @fontsource/outfit @fontsource/ibm-plex-sans` or equivalent if using yarn.",
+    "Add font imports to your global CSS or root component.",
+    "Use Shadcn UI components for Tabs, Cards, Inputs, and Forms, heavily customizing them to avoid the default look.",
+    "Create a smooth scrolling experience using a library like lenis if feasible, or pure CSS scroll-behavior: smooth.",
+    "Every interactive element MUST include a `data-testid` attribute in kebab-case."
+  ]
+}
